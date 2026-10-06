@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - SplitEasy</title>
+    <link rel="stylesheet" href="add-expense.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html">Group Details</a>
+                <a href="add-expense.html" class="active">Add Expense</a>
+                <a href="split-options.html">Split Options</a>
+                <a href="balances.html">Balances & Settle Up</a>
+                <a href="expense-history.html">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+
+            </header>
+
+            <div class="page-header">
+
+                <div class="steps">
+                    <span class="active">Step 1 of 2</span>
+                    <span>Expense Details</span>
+                </div>
+
+                <h1>Add Expense</h1>
+
+                <p>
+                    Record an expense and split it across group members.
+                </p>
+
+            </div>
+
+            <div class="expense-layout">
+
+                <div class="form-col">
+
+                    <div class="active-group-badge">
+
+                        <span>ACTIVE GROUP</span>
+
+                        <strong>Goa Trip</strong>
+
+                        <span class="muted">
+                            (5 members)
+                        </span>
+
+                        <button class="switch-btn">
+                            Switch
+                        </button>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Expense Amount</label>
+
+                        <div class="amount-input">
+                            <span>₹</span>
+                            <input type="number" placeholder="1,800" value="1800">
+                        </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Description / Name</label>
+
+                        <input type="text" placeholder="Dinner at Beach Cafe" class="full-input">
+
+                        <div class="suggestions">
+                            <span>Sightseeing</span>
+                            <span>Dinner</span>
+                            <span>Shopping</span>
+                            <span>Hotel</span>
+                        </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Paid by</label>
+
+                        <div class="paid-by-options">
+                            <button class="active">
+                                You (Darshit) ✓
+                            </button>
+                            <button>Rahul</button>
+                            <button>Aman</button>
+                            <button>Priya</button>
+                            <button>Multiple People</button>
+                        </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Date & Time</label>
+
+                        <input type="datetime-local" value="2023-10-12T20:30">
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Split Between</label>
+
+                        <div class="split-options">
+
+                            <span>
+                                Select who shares this payment
+                            </span>
+
+                            <a href="#">
+                                Select All / Clear
+                            </a>
+
+                        </div>
+
+                        <div class="split-list">
+
+                            <div class="split-item">
+                                <input type="checkbox" checked>
+                                <img src="https://i.pravatar.cc/100?img=12">
+                                <span>Darshit (You)</span>
+                            </div>
+
+                            <div class="split-item">
+                                <input type="checkbox" checked>
+                                <img src="https://i.pravatar.cc/100?img=5">
+                                <span>Rahul Sharma</span>
+                            </div>
+
+                            <div class="split-item">
+                                <input type="checkbox" checked>
+                                <img src="https://i.pravatar.cc/100?img=8">
+                                <span>Aman Verma</span>
+                            </div>
+
+                            <div class="split-item">
+                                <input type="checkbox" checked>
+                                <img src="https://i.pravatar.cc/100?img=3">
+                                <span>Priya Singh</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label>Notes / Receipt</label>
+
+                        <input type="text" placeholder="Beach Shack table #14, seafood & coolers" class="full-input">
+
+                        <div class="file-upload">
+                            <span>📎</span>
+                            Fisherman_bill_receipt.jpg
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="summary-col">
+
+                    <div class="summary-card">
+
+                        <div class="summary-header">
+                            <h3>Split Preview</h3>
+                            <span class="badge">
+                                Live Calculation
+                            </span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total Payable</span>
+                            <h2>₹1,800 <small>INR</small></h2>
+                        </div>
+
+                        <div class="summary-details">
+
+                            <div class="row">
+                                <span>Expense Name:</span>
+                                <strong>Dinner at Beach Cafe</strong>
+                            </div>
+
+                            <div class="row">
+                                <span>Category:</span>
+                                <strong>Food</strong>
+                            </div>
+
+                            <div class="row">
+                                <span>Paid by:</span>
+                                <strong>Rahul</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="split-math">
+
+                            <span>SPLIT METHOD</span>
+
+                            <p>4 members included</p>
+
+                            <div class="math-row">
+                                <span>Exclude: None</span>
+                                <strong>₹450 / person</strong>
+                            </div>
+
+                            <div class="math-row">
+                                <span>Split mode:</span>
+                                <strong>Equal</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="split-options.html" class="btn-primary full-width">
+                            Continue to Split Options →
+                        </a>
+
+                        <a href="dashboard.html" class="btn-link">
+                            Cancel & Discard
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
