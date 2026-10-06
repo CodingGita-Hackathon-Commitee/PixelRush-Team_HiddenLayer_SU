@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense History - SplitEasy</title>
+    <link rel="stylesheet" href="expense-history.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html">Group Details</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="split-options.html">Split Options</a>
+                <a href="balances.html">Balances & Settle Up</a>
+                <a href="expense-history.html" class="active">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+
+            </header>
+
+            <div class="page-header">
+
+                <div class="header-top">
+
+                    <div>
+                        <h1>Expense History</h1>
+
+                        <p>
+                            Complete chronological log of all shared
+                            expenses, and settlements.
+                        </p>
+                    </div>
+
+                    <div class="header-buttons">
+
+                        <button class="btn-outline">
+                            Export PDF / CSV Report
+                        </button>
+
+                        <a href="add-expense.html" class="btn-primary">
+                            + Add Expense
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>TOTAL RECORDED</span>
+                    <h3>₹12,480 <small>INR</small></h3>
+                    <p>+18% vs last month</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>SETTLED BY GROUP</span>
+                    <h3 class="green">
+                        ₹8,200 <small>settled</small>
+                    </h3>
+                    <p>67% of total</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>NET STANDING</span>
+                    <h3 class="red">
+                        -₹471 <small>net</small>
+                    </h3>
+                    <p>Across all balances</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>ACTIVE TRIPS / GROUPS</span>
+                    <h3>4 <small>groups</small></h3>
+                    <p>20 expenses total</p>
+                </div>
+
+            </div>
+
+            <div class="filters-row">
+
+                <input type="text" placeholder="🔍 Search by name, friend name, or notes...">
+
+                <div class="filter-buttons">
+                    <button class="active">
+                        All Groups (Goa Trip, College)
+                    </button>
+
+                    <button>Last 30 Days</button>
+                    <button>Most Recent First</button>
+                </div>
+
+            </div>
+
+            <div class="category-filters">
+
+                <span>CATEGORY</span>
+
+                <button class="active">Food</button>
+                <button>Travel</button>
+                <button>Shopping</button>
+                <button>Transport</button>
+                <button>Bills</button>
+                <button>Entertainment</button>
+
+            </div>
+
+            <div class="table-container">
+
+                <div class="table-header">
+
+                    <span>CATEGORY & EXPENSE</span>
+                    <span>GROUP</span>
+                    <span>DATE & TIME</span>
+                    <span>PAID BY</span>
+                    <span>TOTAL AMOUNT</span>
+                    <span>YOUR SHARE</span>
+
+                </div>
+
+                <div class="table-row">
+
+                    <div class="col main-col">
+
+                        <span class="icon">🍽️</span>
+
+                        <div>
+                            <strong>Dinner at Beach Cafe</strong>
+                            <br>
+                            <small>Food & Dining • 4 people split</small>
+                        </div>
+
+                    </div>
+
+                    <div class="col">Goa Trip</div>
+
+                    <div class="col">
+                        12 Oct 2026<br>
+                        8:30 PM
+                    </div>
+
+                    <div class="col">Rahul Sharma</div>
+
+                    <div class="col">₹1,800</div>
+
+                    <div class="col red">
+                        -₹450
+                        <small>You Owe</small>
+                    </div>
+
+                </div>
+
+                <div class="table-row">
+
+                    <div class="col main-col">
+
+                        <span class="icon">🚕</span>
+
+                        <div>
+                            <strong>Uber Ride from Airport</strong>
+                            <br>
+                            <small>Transport • 2 people split</small>
+                        </div>
+
+                    </div>
+
+                    <div class="col">College Friends</div>
+
+                    <div class="col">
+                        11 Oct 2026<br>
+                        6:15 PM
+                    </div>
+
+                    <div class="col">Darshit (You)</div>
+
+                    <div class="col">₹420</div>
+
+                    <div class="col green">
+                        +₹210
+                        <small>You are owed</small>
+                    </div>
+
+                </div>
+
+                <div class="table-row">
+
+                    <div class="col main-col">
+
+                        <span class="icon">🏨</span>
+
+                        <div>
+                            <strong>Hotel Booking (Villa Candolim)</strong>
+                            <br>
+                            <small>Travel • 5 people split</small>
+                        </div>
+
+                    </div>
+
+                    <div class="col">Goa Trip</div>
+
+                    <div class="col">
+                        10 Oct 2026<br>
+                        2:00 PM
+                    </div>
+
+                    <div class="col">Priya Singh</div>
+
+                    <div class="col">₹2,600</div>
+
+                    <div class="col green">
+                        +₹520
+                        <small>You are owed</small>
+                    </div>
+
+                </div>
+
+                <div class="table-row">
+
+                    <div class="col main-col">
+
+                        <span class="icon">🍿</span>
+
+                        <div>
+                            <strong>Movie Tickets & Popcorn</strong>
+                            <br>
+                            <small>
+                                Entertainment • 3 people split
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="col">Weekend Dinner</div>
+
+                    <div class="col">
+                        09 Oct 2026<br>
+                        7:45 PM
+                    </div>
+
+                    <div class="col">Aman Verma</div>
+
+                    <div class="col">₹950</div>
+
+                    <div class="col red">
+                        -₹190
+                        <small>You Owe</small>
+                    </div>
+
+                </div>
+
+                <div class="table-row">
+
+                    <div class="col main-col">
+
+                        <span class="icon">📶</span>
+
+                        <div>
+                            <strong>Wifi Fiber Monthly Bill</strong>
+                            <br>
+                            <small>
+                                Utilities • 4 people split
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="col">Flat Expenses</div>
+
+                    <div class="col">
+                        05 Oct 2026<br>
+                        11:00 AM
+                    </div>
+
+                    <div class="col">Darshit (You)</div>
+
+                    <div class="col">₹999</div>
+
+                    <div class="col green">
+                        +₹749
+                        <small>You are owed</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="table-footer">
+
+                <span>
+                    Showing 5 of 28 recorded expenses
+                </span>
+
+                <span>
+                    Total spent this month:
+                    <strong>₹12,480</strong>
+                    • Total settled:
+                    <strong>₹8,200</strong>
+                </span>
+
+                <div class="pagination">
+                    <button>Previous</button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>Next</button>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

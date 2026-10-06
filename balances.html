@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balances & Settle Up - SplitEasy</title>
+    <link rel="stylesheet" href="balances.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html">Group Details</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="split-options.html">Split Options</a>
+                <a href="balances.html" class="active">Balances & Settle Up</a>
+                <a href="expense-history.html">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+
+            </header>
+
+            <div class="page-header">
+
+                <h1>Balances & Settle Up</h1>
+
+                <p>
+                    Overview of who owes whom across all your groups
+                    and individual splits.
+                </p>
+
+                <div class="header-buttons">
+                    <button class="btn-outline">
+                        Simplify Debts
+                    </button>
+
+                    <button class="btn-outline">
+                        Ledger Summary
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="summary-grid">
+
+                <div class="summary-card">
+
+                    <span>YOU OWE</span>
+
+                    <h2 class="red">₹1,240</h2>
+
+                    <p>2 friends across 3 groups</p>
+
+                    <button class="btn-primary full-width">
+                        Settle All Due (₹1,240)
+                    </button>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <span>YOU ARE OWED</span>
+
+                    <h2 class="green">₹2,850</h2>
+
+                    <p>3 friends across 3 groups</p>
+
+                    <button class="btn-outline full-width">
+                        Send Gentle Reminders
+                    </button>
+
+                </div>
+
+                <div class="summary-card highlight">
+
+                    <span>NET STANDING</span>
+
+                    <h2>+₹1,610</h2>
+
+                    <p>
+                        You're overall positive!
+                        (₹2,850 owed to you − ₹1,240 you owe)
+                    </p>
+
+                    <a href="expense-history.html" class="btn-primary full-width">
+                        View Timing & History
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="balances-grid">
+
+                <div class="balance-card">
+
+                    <h3>
+                        🔴 You Owe
+                        <span>(2 people)</span>
+                    </h3>
+
+                    <div class="person-row">
+
+                        <img src="https://i.pravatar.cc/100?img=5">
+
+                        <div class="person-info">
+                            <strong>Rahul Sharma</strong>
+                            <span>Roommate / Goa Trip</span>
+                        </div>
+
+                        <div class="person-amount red">
+                            ₹450
+                        </div>
+
+                        <div class="person-action">
+                            <button class="btn-primary small">
+                                Settle ₹450
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="person-row">
+
+                        <img src="https://i.pravatar.cc/100?img=3">
+
+                        <div class="person-info">
+                            <strong>Priya Singh</strong>
+                            <span>Owns Trip / Weekend stay</span>
+                        </div>
+
+                        <div class="person-amount red">
+                            ₹790
+                        </div>
+
+                        <div class="person-action">
+                            <button class="btn-primary small">
+                                Settle ₹790
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="balance-card">
+
+                    <h3>
+                        🟢 Others Owe You
+                        <span>(3 people)</span>
+                    </h3>
+
+                    <div class="person-row">
+
+                        <img src="https://i.pravatar.cc/100?img=8">
+
+                        <div class="person-info">
+                            <strong>Aman Verma</strong>
+                            <span>College Friends / Flat</span>
+                        </div>
+
+                        <div class="person-amount green">
+                            ₹800
+                        </div>
+
+                        <div class="person-action">
+                            <button class="btn-outline small">
+                                Send Friendly Nudge
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="person-row">
+
+                        <img src="https://i.pravatar.cc/100?img=9">
+
+                        <div class="person-info">
+                            <strong>Neha Gupta</strong>
+                            <span>Owns Trip / Weekend stay</span>
+                        </div>
+
+                        <div class="person-amount green">
+                            ₹650
+                        </div>
+
+                        <div class="person-action">
+                            <button class="btn-outline small">
+                                Send Friendly Nudge
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="person-row">
+
+                        <img src="https://i.pravatar.cc/100?img=5">
+
+                        <div class="person-info">
+                            <strong>Rahul Sharma</strong>
+                            <span>Dinner at Beach Cafe / Goa Trip</span>
+                        </div>
+
+                        <div class="person-amount green">
+                            ₹1,400
+                        </div>
+
+                        <div class="person-action">
+                            <button class="btn-outline small">
+                                Mark as Paid
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tools-section">
+
+                <div class="tool-card">
+
+                    <h3>Receive Payments Instantly</h3>
+
+                    <p>
+                        Share your UPI ID or QR code.
+                        Friends can pay you directly via GPay,
+                        PhonePe, or Paytm.
+                    </p>
+
+                    <div class="qr-area">
+
+                        <div class="qr-placeholder">
+                            ▣ Scan to Pay
+                        </div>
+
+                        <button class="btn-outline small">
+                            Share Link
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="tool-card">
+
+                    <h3>Guilt-Free Settlements</h3>
+
+                    <p>
+                        Money talk shouldn't be awkward.
+                        SplitEasy sends friendly automated nudges
+                        that frame payments around shared memories,
+                        never debt pressure.
+                    </p>
+
+                    <ul>
+                        <li>Zero Friction Promises</li>
+                        <li>Secure Bank-Grade Transfer</li>
+                    </ul>
+
+                    <button class="btn-outline small">
+                        Enable Auto-Nudge
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
