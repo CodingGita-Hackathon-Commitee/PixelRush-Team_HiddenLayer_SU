@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 95vh;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #4b4b9b, #2b2b6b), url('https://images.unsplash.com/photo-1543807535-eceef0bc6599?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover;
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-area {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    background: #5c5cff;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.left-content h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.left-content h1 span {
+    color: #5cffb1;
+}
+
+.left-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 450px;
+}
+
+.signup-card h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.signup-card p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Social Row */
+.social-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-social {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-social.whatsapp {
+    background: #e8f5e9;
+    border-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 11px;
+    color: #aaa;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 1px;
+    background: #eee;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Form */
+.input-group {
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #5c5cff;
+}
+
+.phone-input {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.phone-input span {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #555;
+    border-right: 1px solid #ddd;
+}
+
+.phone-input input {
+    border: none;
+    border-radius: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.checkbox-group a {
+    color: #5c5cff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #5c5cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #4a4ae0;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.bottom-text a {
+    color: #5c5cff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .left-panel {
+        padding: 30px;
+        min-height: 200px;
+    }
+
+    .left-content h1 {
+        font-size: 26px;
+    }
+
+    .right-panel {
+        padding: 20px;
+    }
+}
