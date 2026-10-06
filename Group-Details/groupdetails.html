@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Details - SplitEasy</title>
+    <link rel="stylesheet" href="group-details.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html" class="active">Group Details</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="split-options.html">Split Options</a>
+                <a href="balances.html">Balances & Settle Up</a>
+                <a href="expense-history.html">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+
+            </header>
+
+            <div class="group-header">
+
+                <div class="group-banner">
+
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Goa">
+
+                    <div class="banner-overlay">
+                        <h1>Goa Roadtrip 🏖️</h1>
+                        <p>5 Members • Created 12 days ago</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="group-stats-row">
+
+                <div class="stat-box">
+                    <span>Total Group Spend</span>
+                    <h3>₹8,450 <small>INR</small></h3>
+                    <p>12 expenses recorded</p>
+                </div>
+
+                <div class="stat-box green-bg">
+                    <span>You are Owed</span>
+                    <h3>+₹1,250</h3>
+                    <p>2 friends owe you</p>
+                </div>
+
+                <div class="stat-box">
+                    <span>You Owe</span>
+                    <h3 class="red">₹0</h3>
+                    <p>All clear! No pending debt.</p>
+                </div>
+
+            </div>
+
+            <div class="tabs">
+                <button class="active">Overview</button>
+                <button>Expenses (12)</button>
+                <button>Members & Balances</button>
+                <button>Settlements</button>
+            </div>
+
+            <div class="content-grid">
+
+                <div class="left-col">
+
+                    <div class="section-header">
+
+                        <h2>Recent Group Expenses</h2>
+
+                        <input type="text" placeholder="Search expenses...">
+
+                    </div>
+
+                    <div class="expense-list">
+
+                        <div class="expense-item">
+
+                            <div class="icon">🍽️</div>
+
+                            <div class="details">
+
+                                <h4>
+                                    Dinner at Beach Cafe
+                                    <span class="tag green">Settled</span>
+                                </h4>
+
+                                <p>
+                                    Paid by Rahul • Yesterday, 8:30 PM • ₹1,800 Total
+                                </p>
+
+                            </div>
+
+                            <div class="amount">
+                                <span class="red">
+                                    You owe ₹450
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="expense-item">
+
+                            <div class="icon">🏨</div>
+
+                            <div class="details">
+
+                                <h4>
+                                    Hotel Booking (Villa Candolim)
+                                    <span class="tag">Settled</span>
+                                </h4>
+
+                                <p>
+                                    Paid by Priya • Oct 11, 2:00 PM • ₹2,600 Total
+                                </p>
+
+                            </div>
+
+                            <div class="amount">
+                                <span class="green">
+                                    You are owed ₹520
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="expense-item">
+
+                            <div class="icon">🚕</div>
+
+                            <div class="details">
+
+                                <h4>
+                                    Taxi from Dabolim Airport
+                                    <span class="tag">Settled</span>
+                                </h4>
+
+                                <p>
+                                    Paid by You • Oct 10, 10:00 AM • ₹1,900 Total
+                                </p>
+
+                            </div>
+
+                            <div class="amount">
+                                <span class="green">
+                                    You are owed ₹1,150
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right-col">
+
+                    <div class="side-card">
+
+                        <h3>Smart Settlement Path</h3>
+
+                        <p>
+                            SplitEasy optimized 7 complex debt transfers
+                            into just 2 simple settlements!
+                        </p>
+
+                        <div class="settle-item">
+                            <span>Aman → Rahul</span>
+                            <strong>₹600</strong>
+                        </div>
+
+                        <div class="settle-item">
+                            <span>Neha → Rahul</span>
+                            <strong>₹650</strong>
+                        </div>
+
+                        <a href="balances.html" class="btn-primary full-width">
+                            ⚡ Tap Settle All via UPI
+                        </a>
+
+                    </div>
+
+                    <div class="side-card">
+
+                        <h3>Member Balances</h3>
+
+                        <div class="member-row">
+                            <img src="https://i.pravatar.cc/100?img=12">
+                            <span>Darshit (You)</span>
+                            <strong class="green">+₹1,250</strong>
+                        </div>
+
+                        <div class="member-row">
+                            <img src="https://i.pravatar.cc/100?img=3">
+                            <span>Priya Singh</span>
+                            <strong class="green">+₹790</strong>
+                        </div>
+
+                        <div class="member-row">
+                            <img src="https://i.pravatar.cc/100?img=5">
+                            <span>Rahul Sharma</span>
+                            <strong class="red">-₹450</strong>
+                        </div>
+
+                        <div class="member-row">
+                            <img src="https://i.pravatar.cc/100?img=8">
+                            <span>Aman Verma</span>
+                            <strong class="red">-₹800</strong>
+                        </div>
+
+                        <div class="member-row">
+                            <img src="https://i.pravatar.cc/100?img=9">
+                            <span>Neha Gupta</span>
+                            <strong class="red">-₹790</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
