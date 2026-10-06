@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SplitEasy</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html" class="active">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html">Group Details</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="split-options.html">Split Options</a>
+                <a href="balances.html">Balances & Settle Up</a>
+                <a href="expense-history.html">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+            </header>
+
+            <div class="dashboard-body">
+
+                <div class="greeting-section">
+
+                    <h1>Good morning, Darshit 👋</h1>
+
+                    <p>
+                        Keep your group expenses simple.
+                        You're all settled in 3 groups.
+                    </p>
+
+                    <div class="header-actions">
+                        <a href="balances.html" class="btn-outline">
+                            Settle Up
+                        </a>
+
+                        <a href="create-group.html" class="btn-primary">
+                            + Create Group
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span>Total Net Standing</span>
+                        <h3 class="green">+₹1,610 <small>net</small></h3>
+                        <p>Calculated across 5 active circles</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>You Owe</span>
+                        <h3 class="red">₹1,240 <small>net</small></h3>
+                        <p>Due to Darshit & Rahul</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>You're Owed</span>
+                        <h3 class="green">₹2,850 <small>net</small></h3>
+                        <p>Pending from Dax & Kunal</p>
+                    </div>
+
+                </div>
+
+                <div class="section-header">
+
+                    <h2>
+                        My Groups <span>(5 total)</span>
+                    </h2>
+
+                    <div class="filters">
+                        <button class="active">All (5)</button>
+                        <button>Trips</button>
+                        <button>Flat & Home</button>
+                        <button>Friends</button>
+                    </div>
+
+                </div>
+
+                <div class="groups-grid">
+
+                    <a href="group-details.html" class="group-card">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Goa Trip">
+
+                        <div class="group-info">
+                            <h4>Goa Trip</h4>
+                            <p>5 Members</p>
+
+                            <div class="group-stats">
+                                <span>You are owed <strong>+₹1,250</strong></span>
+                                <span>Total: ₹9,450</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="group-details.html" class="group-card">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="College Friends">
+
+                        <div class="group-info">
+                            <h4>College Friends</h4>
+                            <p>4 Members</p>
+
+                            <div class="group-stats">
+                                <span>You owe <strong class="red">-₹450</strong></span>
+                                <span>Total: ₹4,280</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="group-details.html" class="group-card">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Flat Expenses">
+
+                        <div class="group-info">
+                            <h4>Flat Expenses</h4>
+                            <p>3 Members</p>
+
+                            <div class="group-stats">
+                                <span>You are owed <strong>+₹850</strong></span>
+                                <span>Total: ₹12,600</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="section-header">
+
+                    <h2>Recent Expenses</h2>
+
+                    <a href="expense-history.html">
+                        Full Ledger →
+                    </a>
+
+                </div>
+
+                <div class="expense-list">
+
+                    <div class="expense-item">
+                        <div class="icon">🍽️</div>
+
+                        <div class="details">
+                            <h4>
+                                Dinner at Beach Cafe
+                                <span class="tag">Goa Trip</span>
+                            </h4>
+
+                            <p>Paid by Rahul • 12 Oct, 8:30 PM</p>
+                        </div>
+
+                        <div class="amount red">
+                            -₹450
+                        </div>
+                    </div>
+
+                    <div class="expense-item">
+                        <div class="icon">🚕</div>
+
+                        <div class="details">
+                            <h4>
+                                Airport Prepaid Taxi
+                                <span class="tag">Goa Trip</span>
+                            </h4>
+
+                            <p>Paid by You • 12 Oct, 4:15 PM</p>
+                        </div>
+
+                        <div class="amount green">
+                            +₹1,320
+                        </div>
+                    </div>
+
+                    <div class="expense-item">
+                        <div class="icon">📶</div>
+
+                        <div class="details">
+                            <h4>
+                                Highspeed Fiber WiFi
+                                <span class="tag">Flat Expenses</span>
+                            </h4>
+
+                            <p>Paid by You • 10 Oct, 11:00 AM</p>
+                        </div>
+
+                        <div class="amount green">
+                            +₹749
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
