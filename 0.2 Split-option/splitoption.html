@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Options - SplitEasy</title>
+    <link rel="stylesheet" href="split-options.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <span class="logo-icon">S</span> SplitEasy
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Home / My Groups</a>
+                <a href="create-group.html">Create Group</a>
+                <a href="group-details.html">Group Details</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="split-options.html" class="active">Split Options</a>
+                <a href="balances.html">Balances & Settle Up</a>
+                <a href="expense-history.html">Expense History</a>
+            </nav>
+
+            <div class="user-profile">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+
+                <div>
+                    <strong>Hardik Patel</strong>
+                    <span>@hardik.p</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <input type="text" placeholder="🔍 Search groups, expenses, friends...">
+
+                <a href="add-expense.html" class="btn-primary">
+                    + Add Expense
+                </a>
+
+            </header>
+
+            <div class="page-header">
+
+                <div class="steps">
+                    <span>Step 1 of 2</span>
+                    <span class="active">Step 2 of 2</span>
+                </div>
+
+                <h1>How should we split this?</h1>
+
+                <p>
+                    Choose how expenses are shared among group members
+                    with real-time settlement math.
+                </p>
+
+            </div>
+
+            <div class="split-layout">
+
+                <div class="left-col">
+
+                    <div class="active-expense-card">
+
+                        <div class="expense-header">
+
+                            <span class="tag red">
+                                Rahul Paid
+                            </span>
+
+                            <h3>Dinner at Beach Cafe</h3>
+
+                            <p>Paid by Rahul Sharma</p>
+
+                        </div>
+
+                        <div class="expense-total">
+
+                            <span>Total Expense</span>
+
+                            <strong>₹1,800</strong>
+
+                            <span>
+                                4 of 5 group members included
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="split-method-selector">
+
+                        <label>Select Split Method</label>
+
+                        <div class="method-options">
+                            <button class="active">
+                                Split Equally
+                            </button>
+
+                            <button>
+                                Exact Amounts
+                            </button>
+
+                            <button>
+                                By Percentage
+                            </button>
+
+                            <button>
+                                Shares / Ratio
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="split-detail-card">
+
+                        <div class="split-equal-info">
+
+                            <h3>Split Equally</h3>
+
+                            <p>
+                                Each person pays the same share.
+                                Best for shared meals and standard group costs.
+                            </p>
+
+                            <div class="math-badge">
+                                ₹1,800 ÷ 4 =
+                                <strong>₹450.00</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="member-splits">
+
+                        <div class="split-row">
+
+                            <img src="https://i.pravatar.cc/100?img=12">
+
+                            <div class="split-info">
+                                <strong>Darshit (You)</strong>
+                                <span>You owe from this pool</span>
+                            </div>
+
+                            <div class="split-amount green">
+                                ₹450.00
+                            </div>
+
+                        </div>
+
+                        <div class="split-row">
+
+                            <img src="https://i.pravatar.cc/100?img=5">
+
+                            <div class="split-info">
+                                <strong>Rahul Sharma</strong>
+                                <span>Owes ₹1,350 less others</span>
+                            </div>
+
+                            <div class="split-amount green">
+                                ₹450.00
+                            </div>
+
+                        </div>
+
+                        <div class="split-row">
+
+                            <img src="https://i.pravatar.cc/100?img=8">
+
+                            <div class="split-info">
+                                <strong>Aman Verma</strong>
+                                <span>Included in split</span>
+                            </div>
+
+                            <div class="split-amount green">
+                                ₹450.00
+                            </div>
+
+                        </div>
+
+                        <div class="split-row">
+
+                            <img src="https://i.pravatar.cc/100?img=3">
+
+                            <div class="split-info">
+                                <strong>Priya Singh</strong>
+                                <span>Included in split</span>
+                            </div>
+
+                            <div class="split-amount green">
+                                ₹450.00
+                            </div>
+
+                        </div>
+
+                        <div class="split-row disabled">
+
+                            <img src="https://i.pravatar.cc/100?img=9">
+
+                            <div class="split-info">
+                                <strong>Neha Gupta</strong>
+                                <span>Not included</span>
+                            </div>
+
+                            <div class="split-amount">
+                                ₹0.00
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+
+                        <a href="add-expense.html" class="btn-outline">
+                            ← Back to Edit Expense
+                        </a>
+
+                        <div class="actions-right">
+
+                            <a href="dashboard.html" class="btn-link">
+                                Save Draft
+                            </a>
+
+                            <a href="balances.html" class="btn-primary">
+                                Save & Confirm Expense
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right-col">
+
+                    <div class="side-card">
+
+                        <h3>Settlement Impact</h3>
+
+                        <div class="impact-row">
+                            <span>You → Rahul</span>
+                            <strong>₹450</strong>
+                        </div>
+
+                        <div class="impact-row">
+                            <span>Aman → Rahul</span>
+                            <strong>₹450</strong>
+                        </div>
+
+                        <div class="impact-row">
+                            <span>Priya → Rahul</span>
+                            <strong>₹450</strong>
+                        </div>
+
+                        <p class="note">
+                            * Settlements simplify into min transactions
+                            across all group trips automatically.
+                        </p>
+
+                    </div>
+
+                    <div class="side-card highlight">
+
+                        <h3>Instant Settlement</h3>
+
+                        <p>UPI & Instant Pay Ready</p>
+
+                        <div class="qr-placeholder">
+                            ▣ QR Code Here
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
